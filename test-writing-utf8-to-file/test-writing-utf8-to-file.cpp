@@ -41,8 +41,6 @@ int main()
 		//Results:
 			//This does not seem to write to the file at all. I am unsure why.
 
-
-	
 	std::cout << "PROGRAM FINSHED" << std::endl;
 	system("PAUSE");
 	return 1;
