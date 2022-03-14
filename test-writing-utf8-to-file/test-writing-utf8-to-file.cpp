@@ -23,18 +23,23 @@ int main()
 		//The projects encoding is set to "Multi-byte" in Visual Studio.
 		//This is expected to give some problems due to switching between cout and wcout, as well as the console not showing the complex characters properly.
 		displayToConsoleTest(testStandardString, testWideString);
+		//Results:
+			//As expected, the standard string is shown completely with the Japanese characters replaced with question marks.
+			//The wide version fails to display at all, and even omits the "new line" at the end.
 
 	//Test 2:
 		//Sanity check on a method of writing to a file.
-		//This displays the Japanese characters as question marks, while having the file encoded as UTF-8.
-		//All other characters display properly.
 		writeStringToStandardFile(testStandardString);
+		//Results:
+			//This displays the Japanese characters as question marks, while having the file encoded as UTF-8.
+			//All other characters display properly.
 
 
 	//Test 3:
 		//Checking if wstrings will write to the wide stream file using the same method of writing the string to a standard file stream.
-		//This does not seem to write to the file at all. I am unsure why.
 		writeWStringToWideFile(testWideString);
+		//Results:
+			//This does not seem to write to the file at all. I am unsure why.
 
 
 	
