@@ -41,6 +41,9 @@ int main()
 		//Results:
 			//This does not seem to write to the file at all. I am unsure why.
 
+
+	//After sitting on this for a long time, I found this: https://docs.microsoft.com/en-us/cpp/build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8?view=msvc-170
+
 	std::cout << "PROGRAM FINSHED" << std::endl;
 	system("PAUSE");
 	return 1;
